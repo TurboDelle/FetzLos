@@ -1,0 +1,64 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#sidebar {
+    width: 280px;
+    background: #f2f2f2;
+    padding: 15px;
+    overflow-y: auto;
+    border-right: 2px solid #ccc;
+}
+
+#sidebar h2 {
+    margin-top: 0;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar li {
+    padding: 8px;
+    margin-bottom: 6px;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+#sidebar li:hover {
+    background: #e6e6e6;
+}
+
+#main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#map {
+    height: 60%;
+}
+
+#info {
+    padding: 15px;
+    background: #fff;
+    height: 40%;
+    overflow-y: auto;
+    border-top: 2px solid #ccc;
+}
+
+#info img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
