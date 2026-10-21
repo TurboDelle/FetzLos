@@ -132,7 +132,7 @@ const campingPlaetze = [
         url: "https://www.istracamping.com/de/",
         datum: "2008-07",
         adresse: "Istarska 19, 52475 Savudrija",
-        telefon: "04721 65191",
+        telefon: "+385 52 709 550",
         email: "savudrija@istracamping.com",
         lat: 53.878249,
         lon: 8.652325,
@@ -158,7 +158,7 @@ const infoBox = document.getElementById("info");
 // --- Campingplätze einfügen ---
 campingPlaetze.forEach((platz, index) => {
     const li = document.createElement("li");
-    li.textContent = platz.name + " (" + platz.ort + ")";
+    li.textContent = platz.name + " (" + platz.datum + ")";
     li.onclick = () => showInfo(index);
     list.appendChild(li);
 
