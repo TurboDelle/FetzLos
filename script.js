@@ -4,21 +4,21 @@ const campingPlaetze = [
         ort: "Gardasee - Peschiera",
         name: "Camping Cappucini",
         url: "https://www.camp-cappuccini.com/de",
-        datum: "12.7. bis 18.7.2023",
+        datum: "2023-07",
         adresse: "Via Arrigo Boito, 2, 37019 Peschiera del Garda, Verona",
         telefon: "+39 045 7551592",
         email: "info@camp-cappuccini.com",
         lat: 45.443100,
         lon: 10.683500,
         bilder: ["cappuccini1.jpg", "cappuccini2.jpg"],
-        info: "Schöner Campingplatz am Gardasee."
+        info: "SchÃ¶ner Campingplatz am Gardasee."
     },
     {
         id: 2,
         ort: "Cuxhaven - Duhnen",
         name: "Campingplatz Beckmann-Duhnen",
         url: "https://beckmann-duhnen.de/",
-        datum: "28.3. bis 1.4.2024",
+        datum: "2024-04; 2025-05",
         adresse: "Windeichenweg 32, 27476 Cuxhaven",
         telefon: "04721 65191",
         email: "info@beckmann-duhnen.de",
@@ -32,22 +32,22 @@ const campingPlaetze = [
         ort: "Nauheim",
         name: "Campingplatz Nauheim",
         url: "https://www.campingplatznauheim.de/",
-        datum: "",
+        datum: "2024-05",
         adresse: "Seeweg 2, 64569 Nauheim",
         telefon: "17660494430",
         email: "",
         lat: 49.950819,
         lon: 8.473343,
         bilder: ["nauheim1.jpg", "nauheim2.jpg"],
-        info: "Schöner Platz am See."
+        info: "SchÃ¶ner Platz am See."
     },
     {
         id: 4,
         ort: "Diemelsee",
         name: "Campingplatz Seeblick Diemelsee",
         url: "https://www.diemelsee-camping.de",
-        datum: "September 2024",
-        adresse: "Auf dem Kampe 3a, 34519 Diemelsee – Heringhausen",
+        datum: "2024-09",
+        adresse: "Auf dem Kampe 3a, 34519 Diemelsee â€“ Heringhausen",
         telefon: "05633 993096",
         email: "info@diemelsee-camping.de",
         lat: 51.364167,
@@ -60,7 +60,7 @@ const campingPlaetze = [
         ort: "Kijkduin - Den Haag",
         name: "Vakantiepark Kijkduin",
         url: "https://www.roompot.nl/ferienparks/niederlande/suedholland/vakantiepark-kijkduin/",
-        datum: "3.10 bis 7.10.2024",
+        datum: "2024-10",
         adresse: "Machiel Vrijenhoeklaan 450, 2555 NW Kijkduin",
         telefon: "+31 70 4482100",
         email: "",
@@ -71,24 +71,10 @@ const campingPlaetze = [
     },
     {
         id: 6,
-        ort: "Cuxhaven - Duhnen",
-        name: "Campingplatz Beckmann-Duhnen",
-        url: "https://beckmann-duhnen.de/",
-        datum: "1.5. bis 5.5.2025",
-        adresse: "Windeichenweg 32, 27476 Cuxhaven",
-        telefon: "04721 65191",
-        email: "info@beckmann-duhnen.de",
-        lat: 53.878249,
-        lon: 8.652325,
-        bilder: ["beckmann2025_1.jpg", "beckmann2025_2.jpg"],
-        info: "Wiederholung – beliebter Platz in Duhnen."
-    },
-    {
-        id: 7,
         ort: "Koblenz",
         name: "KNAUS Campingpark Koblenz/Rhein-Mosel",
         url: "https://www.knauscamp.de/koblenz",
-        datum: "23.5. bis 25.5.2025",
+        datum: "2025-05",
         adresse: "Schartwiesenweg 6, 56070 Koblenz",
         telefon: "+49 261 82719",
         email: "koblenz@knauscamp.de",
@@ -98,26 +84,26 @@ const campingPlaetze = [
         info: "Campingplatz am Zusammenfluss von Rhein und Mosel."
     },
     {
-        id: 8,
+        id: 7,
         ort: "Renesse",
         name: "Camping Julianahoeve",
         url: "https://www.julianahoeve.nl",
-        datum: "2.10. bis 5.10.2025",
+        datum: "2025-10",
         adresse: "Hoogenboomlaan 42, 4325 DM Renesse",
         telefon: "+31 111 461414",
         email: "info@julianahoeve.nl",
         lat: 51.73088,
         lon: 3.754691,
         bilder: ["renesse1.jpg", "renesse2.jpg"],
-        info: "Großer Familiencampingplatz nahe der Nordsee."
+        info: "GroÃŸer Familiencampingplatz nahe der Nordsee."
     },
     {
-        id: 9,
+        id: 8,
         ort: "Kehl",
         name: "Camping Kehl",
         url: "https://www.campingpark-kehl.de/",
-        datum: "30.4. bis 5.5.2026",
-        adresse: "Rheindammstraße 1, 77694 Kehl",
+        datum: "2026-06",
+        adresse: "RheindammstraÃŸe 1, 77694 Kehl",
         telefon: "+49 7851 2603",
         email: "info@campingpark-kehl.de",
         lat: 48.56627,
@@ -126,19 +112,35 @@ const campingPlaetze = [
         info: "Campingplatz direkt am Rhein."
     },
     {
-        id: 10,
+        id: 9,
         ort: "Biggesee",
-        name: "Vier Jahreszeiten – Freizeit-Oasen",
+        name: "Vier Jahreszeiten â€“ Freizeit-Oasen",
         url: "https://biggesee.freizeit-oasen.de",
-        datum: "",
+        datum: "2026-10",
         adresse: "Am Sonderner Kopf 3, 57462 Olpe",
         telefon: "+49 2761 944111",
         email: "biggesee@freizeit-oasen.de",
         lat: 51.07436,
         lon: 7.85765,
         bilder: ["biggesee1.jpg", "biggesee2.jpg"],
-        info: "Schöner Platz am Biggesee."
+        info: "SchÃ¶ner Platz am Biggesee."
+    },
+{
+        id: 11,
+        ort: "Savudria - Koroatien",
+        name: "Camping Pineta",
+        url: "https://www.istracamping.com/de/",
+        datum: "2008-07",
+        adresse: "Istarska 19, 52475 Savudrija",
+        telefon: "04721 65191",
+        email: "savudrija@istracamping.com",
+        lat: 53.878249,
+        lon: 8.652325,
+        bilder: ["savudria_1.jpg", "savudria_2.jpg"],
+        info: "Toller Platz mit Blick aufs Meer aber sehr abgelegen."
     }
+
+
 ];
 
 // --- Karte erstellen ---
@@ -153,7 +155,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const list = document.getElementById("camping-list");
 const infoBox = document.getElementById("info");
 
-// --- Campingplätze einfügen ---
+// --- CampingplÃ¤tze einfÃ¼gen ---
 campingPlaetze.forEach((platz, index) => {
     const li = document.createElement("li");
     li.textContent = platz.name + " (" + platz.ort + ")";
