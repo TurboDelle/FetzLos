@@ -158,7 +158,7 @@ const infoBox = document.getElementById("info");
 // --- Campingplätze einfügen ---
 campingPlaetze.forEach((platz, index) => {
     const li = document.createElement("li");
-    li.textContent = platz.name + " (" + platz.datum + ")";
+    li.textContent = platz.ort + " (" + platz.datum + ")";
     li.onclick = () => showInfo(index);
     list.appendChild(li);
 
