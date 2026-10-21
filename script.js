@@ -157,6 +157,10 @@ const infoBox = document.getElementById("info");
 
 // --- Campingplätze einfügen ---
 campingPlaetze.forEach((platz, index) => {
+    const li = document.createElement("li");
+    li.textContent = platz.ort + " (" + platz.datum + ")";
+    li.onclick = () => showInfo(index);
+    list.appendChild(li);
 
     // Nach Biggesee neue Rubrik einfügen
     if (platz.ort === "Biggesee") {
