@@ -178,7 +178,7 @@ function showInfo(i) {
         <p><strong>Datum:</strong> ${p.datum || "Keine Angabe"}</p>
         <p><strong>Webseite:</strong> <a href="${p.url}" target="_blank">${p.url}</a></p>
         <p>${p.info}</p>
-        <img src="images/${p.bilder[0]}" width="200">
-        <img src="images/${p.bilder[1]}" width="200">
+        <img src="images/${p.bilder[0]}" width="800">
+        <img src="images/${p.bilder[1]}" width="800">
     `;
 }
