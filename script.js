@@ -155,6 +155,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const list = document.getElementById("camping-list");
 const infoBox = document.getElementById("info");
 
+
 // --- Campingplätze einfügen ---
 campingPlaetze.forEach((platz, index) => {
     const li = document.createElement("li");
@@ -162,17 +163,9 @@ campingPlaetze.forEach((platz, index) => {
     li.onclick = () => showInfo(index);
     list.appendChild(li);
 
-    // Nach Biggesee neue Rubrik einfügen
-    if (platz.ort === "Biggesee") {
+    const marker = L.marker([platz.lat, platz.lon]).addTo(map);
+    marker.on("click", () => showInfo(index));
 
-        const trennlinie = document.createElement("hr");
-        list.appendChild(trennlinie);
-
-        const überschrift = document.createElement("h3");
-        überschrift.textContent = "Campingplätze mit Familie";
-        überschrift.className = "sidebar-ueberschrift";
-        list.appendChild(überschrift);
-    }
 });
 
 // --- Info anzeigen ---
