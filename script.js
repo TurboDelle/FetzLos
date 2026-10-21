@@ -134,8 +134,8 @@ const campingPlaetze = [
         adresse: "Istarska 19, 52475 Savudrija",
         telefon: "+385 52 709 550",
         email: "savudrija@istracamping.com",
-        lat: 53.878249,
-        lon: 8.652325,
+        lat: 45.4864,
+        lon: 13.49245,
         bilder: ["savudria_1.jpg", "savudria_2.jpg"],
         info: "Toller Platz mit Blick aufs Meer aber sehr abgelegen."
     }
