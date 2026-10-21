@@ -136,7 +136,7 @@ const campingPlaetze = [
         email: "savudrija@istracamping.com",
         lat: 45.4864,
         lon: 13.49245,
-        bilder: ["savudria_1.jpg", "savudria_2.jpg"],
+        bilder: ["savudria1.jpg", "savudria2.jpg"],
         info: "Toller Platz mit Blick aufs Meer aber sehr abgelegen."
     }
 
