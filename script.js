@@ -157,19 +157,6 @@ const infoBox = document.getElementById("info");
 
 // --- Campingplätze einfügen ---
 campingPlaetze.forEach((platz, index) => {
-
-    // Nach Biggesee neue Rubrik einfügen
-    if (platz.ort === "Biggesee") {
-
-        const trennlinie = document.createElement("hr");
-        list.appendChild(trennlinie);
-
-        const überschrift = document.createElement("h3");
-        überschrift.textContent = "Wohnmobilplätze";
-        überschrift.className = "sidebar-ueberschrift";
-        list.appendChild(überschrift);
-    }
-
     const li = document.createElement("li");
     li.textContent = platz.ort + " (" + platz.datum + ")";
     li.onclick = () => showInfo(index);
