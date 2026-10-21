@@ -157,14 +157,18 @@ const infoBox = document.getElementById("info");
 
 // --- Campingplätze einfügen ---
 campingPlaetze.forEach((platz, index) => {
-    const li = document.createElement("li");
-    li.textContent = platz.ort + " (" + platz.datum + ")";
-    li.onclick = () => showInfo(index);
-    list.appendChild(li);
 
-    const marker = L.marker([platz.lat, platz.lon]).addTo(map);
-    marker.on("click", () => showInfo(index));
+    // Nach Biggesee neue Rubrik einfügen
+    if (platz.ort === "Biggesee") {
 
+        const trennlinie = document.createElement("hr");
+        list.appendChild(trennlinie);
+
+        const überschrift = document.createElement("h3");
+        überschrift.textContent = "Campingplätze mit Familie";
+        überschrift.className = "sidebar-ueberschrift";
+        list.appendChild(überschrift);
+    }
 });
 
 // --- Info anzeigen ---
